@@ -1,4 +1,4 @@
-import bannerImg from "../assets/banner.png";
+import bannerImg from "../assets/banner.webp";
 import { Trophy, Landmark, DollarSign } from "lucide-react";
 
 function ProfitBanner() {

@@ -1,10 +1,10 @@
 import FeatureCard from "../components/FeatureCard";
 
-import profitIcon from "../assets/icons/profit.png";
-import challengeIcon from "../assets/icons/challenge.png";
-import lightningIcon from "../assets/icons/lightning.png";
-import newsIcon from "../assets/icons/news.png";
-import targetIcon from "../assets/icons/target.png";
+import profitIcon from "../assets/icons/profit.webp";
+import challengeIcon from "../assets/icons/challenge.webp";
+import lightningIcon from "../assets/icons/lightning.webp";
+import newsIcon from "../assets/icons/news.webp";
+import targetIcon from "../assets/icons/target.webp";
 
 function Features() {
   return (

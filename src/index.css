@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+/* ============================= */
+/* 🔁 HORIZONTAL SCROLL (HERO) */
+/* ============================= */
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 25s linear infinite;
+}
+
+/* ============================= */
+/* 🔼 VERTICAL SCROLL (TRADERS / TESTIMONIALS) */
+/* ============================= */
+
+@keyframes scroll-y {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-y {
+  animation: scroll-y 18s linear infinite;
+}
+
+.animate-scroll-y-slow {
+  animation: scroll-y 26s linear infinite;
+}
+
+.animate-scroll-y-fast {
+  animation: scroll-y 12s linear infinite;
+}
+
+/* pause on hover */
+.animate-scroll-y:hover,
+.animate-scroll-y-fast:hover,
+.animate-scroll-y-slow:hover {
+  animation-play-state: paused;
+}
+
+/* ============================= */
+/* ✨ MARQUEE (optional alt) */
+/* ============================= */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+
+/* ============================= */
+/* ✨ SHIMMER TEXT */
+/* ============================= */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ============================= */
+/* 🌈 GRADIENT ANIMATION */
+/* ============================= */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientMove 12s ease infinite;
+}
